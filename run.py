@@ -23,12 +23,17 @@ months = {}
 files = {}
 days = {"Monday": 0, "Tuesday": 0, "Wednesday": 0, "Thursday": 0, "Friday": 0, "Saturday": 0, "Sunday": 0}
 
+for line in x:
+    lines = line.split(" ")
+    if len(lines) < 10:
+        continue
+    total_number_request += 1
 
+print("How many requests were made: ", total_number_request)
 
-
-How many requests were made on each day? 
-How many requests were made on a week-by-week basis? Per month?
-What percentage of the requests were not successful (any 4xx status code)?
-What percentage of the requests were redirected elsewhere (any 3xx codes)?
-What was the most-requested file?
-What was the least-requested file?
+#didnt get to the other parts :*(
+##How many requests were made on a week-by-week basis? Per month?
+##What percentage of the requests were not successful (any 4xx status code)?
+##What percentage of the requests were redirected elsewhere (any 3xx codes)?
+##What was the most-requested file?
+##What was the least-requested file?
